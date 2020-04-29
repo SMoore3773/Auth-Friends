@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.navList{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navLink{
+  margin: 1rem;
+}
+.header{
+  color: navy;
+  font-size: 5rem;
+}
+.loginForm{
+ margin:2rem;
+ padding:2rem;
+}
+.loginField{
+  margin:.5rem;
+  padding:.5rem;
+  height:1.5rem;
+}
+.loginButton{
+  height:2.5rem;
+  margin:.5rem;
+  padding:.5rem;
+  width: 5rem;
+}
+.loginWarning{
+  color: red;
+  text-decoration: underline;
+}
+.friendInput{
+  margin:.5rem;
+  padding:.5rem;
+  height:1.5rem;
+  width:15rem;
+}
+.addNewFriendButton{
+  height:2.5rem;
+  margin:.5rem;
+  padding:.5rem;
+  width: 10rem;
+}
+.friendArrayContainer{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.friendCard{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding:2rem;
+  box-shadow: .25rem .25rem .5rem navy;
+  width: 45%;
+  background-color: rgb(255, 248, 240);
+  border:solid navy 1px;
+}
+
+.friendAttr{
+  margin:.5rem;
+  padding:.25rem;
+}
+.friendName{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin:.5rem;
+  padding:.25rem;
+}
