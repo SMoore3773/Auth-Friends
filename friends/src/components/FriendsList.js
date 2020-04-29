@@ -23,9 +23,9 @@ class FriendsList extends React.Component {
         console.log('this.state in render of friends list',this.state)
         return(
             <div>
-                <h1>Friend List</h1>
+                <h1 className='header'>Friend List</h1>
                 <AddFriendForm/>
-                <div>
+                <div className='friendArrayContainer'>
                     {this.state.friends.map(friend => (
                         <Friend 
                             key={friend.id} 

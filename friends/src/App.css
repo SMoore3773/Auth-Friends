@@ -27,12 +27,62 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navList{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navLink{
+  margin: 1rem;
+}
+.header{
+  color: navy;
+  font-size: 5rem;
+}
+.loginForm{
+ margin:2rem;
+ padding:2rem;
+}
+.loginField{
+  margin:.5rem;
+  padding:.5rem;
+  height:1.5rem;
+}
+.loginButton{
+  height:2.5rem;
+  margin:.5rem;
+  padding:.5rem;
+  width: 5rem;
+}
+.loginWarning{
+  color: red;
+  text-decoration: underline;
+}
+.friendInput{
+  margin:.5rem;
+  padding:.5rem;
+  height:1.5rem;
+  width:15rem;
+}
+.addNewFriendButton{
+  height:2.5rem;
+  margin:.5rem;
+  padding:.5rem;
+  width: 10rem;
+}
+.friendArrayContainer{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.friendCard{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding:1rem;
+  box-shadow: .5rem .5rem .7rem navy;
+  width: 45%;
 }

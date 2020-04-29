@@ -1,5 +1,5 @@
 //friend object to add  {id: , name: , age: , email: }
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {axiosWithAuth} from '../utils/axiosWithAuth';
 import {useInput} from './useInput';
 
@@ -9,7 +9,6 @@ const AddFriendForm = ()=>{
     const{value:email, bind: bindEmail, reset: resetEmail} = useInput('');
 
     const handleSubmit = e =>{
-        // e.preventDefault();
         addFriend({name,age,email});
         resetName();
         resetAge();
@@ -22,34 +21,35 @@ const AddFriendForm = ()=>{
         .post('http://localhost:4000/api/friends', newFriend)
         .then(res => {
             console.log('add friend success in addFriend form', res)
-        
         })
         .catch(err => console.log('error in addFriend: ', err))
     }  
 
-    // console.log(name,age,email,newFriend)
     return(
         <div>
-            <form>
+            <form className='friendForm'>
                 <input 
                 type='text'
                 name='name'
                 placeholder='Name'
                 {...bindName}
+                className='friendInput'
                 />
                 <input
                  type='number'
                  name='age'
                  placeholder='Age'
                  {...bindAge}
+                 className='friendInput'
                  />
                 <input
                  type='text'
                  name='email'
                  placeholder='Email'
-                 {...bindEmail}/>
-                 {/* <button onClick={setNewFriend}>Confirm Friend</button> */}
-                <button type='submit' onClick={handleSubmit}>Add New Friend</button>
+                 {...bindEmail}
+                 className='friendInput'
+                 />
+                <button className='addNewFriendButton'type='submit' onClick={handleSubmit}>Add New Friend</button>
             </form>
         </div>
     )
