@@ -47,7 +47,7 @@ class Login extends React.Component {
                     className='loginField'
                     />
                     <input
-                    type='text'
+                    type='password'
                     name='password'
                     value={this.state.credentials.password}
                     onChange={this.handleChanges}
